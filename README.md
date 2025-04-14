@@ -3,8 +3,51 @@ Default 16GB VRAM UNO in context generation ComfyUI-node, using RED-UNO FT model
 
 默认16G显存的UNO ComfyUI in-context生成组件，使用RED-UNO FT模型
 
-RED-UNO FLUX-dev-FT FP8：
+## RED-UNO FLUX-dev-FT FP8：
+
 https://civitai.com/models/958009/redcraft-or-cads-or-updated-apr14-or-commercial-and-advertising-design-system
+
+## RED. UNO In-Context (FP8) 4/14/2025
+
+REDAIGC FT Model used to match UNO In-Context Generation
+
+(with improved quality compared to F.1 dev)
+
+解决了FLUX FT底模无法适配UNO组件的问题，FP8权重（显存占用16GB），同时支持Diffusers以及ComfyUI
+
+实测对比DEV生成质量明显提升，对比BF16版本没有明显质量损失，显存占用只有16G，生成时间大概30秒
+
+# 安装说明
+
+由于ComfyUI-RED-UNO使用Diffusers库进行推理，所以首次使用，会自动下载Diffusers格式的T5和Clip（10G左右）
+
+存放路径是ComfyUI虚拟环境的.chche缓存文件夹，如果是系统级安装的ComfyUI，则会存放至C盘User路径下的.cache（非常占空间）
+
+建议是给ComfyUI的虚拟环境指定一个独立的缓存目录。
+
+FLUX FT底模正常存放在ComfyUI\models\diffusion_models目录下，VAE在ComfyUI\models\vae，UNO-Lora在ComfyUI\models\loras
+
+![image](https://github.com/user-attachments/assets/572a5206-ab23-417f-b83e-61b2f06d0b8b)
+
+use_fp8和offload 默认勾选，否则24G显存就不够用了，VAE也要使用Diffusers格式的版本否则会报错（ComfyUI目前没有直接支持UNO所以才这么折腾）
+
+VAE版本：
+https://huggingface.co/diffusers/FLUX.1-vae/tree/main
+
+
+---
+
+Diffusers 脚本：
+
+https://github.com/bytedance/UNO
+
+Dit-LoRA 权重：
+
+https://huggingface.co/bytedance-research/UNO
+
+VAE版本：
+
+https://huggingface.co/diffusers/FLUX.1-vae/tree/main
 
 
 # ComfyUI UNO Nodes
