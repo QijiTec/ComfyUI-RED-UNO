@@ -20,6 +20,8 @@ REDAIGC FT Model used to match UNO In-Context Generation
 
 实测对比DEV生成质量明显提升，对比BF16版本没有明显质量损失，显存占用只有16G，生成时间大概30秒
 
+# 注意：16G显存占用指的是官方案例中512x512尺寸的生成，640x960以上显存占用暴涨
+
 # 安装说明
 
 由于ComfyUI-RED-UNO使用Diffusers库进行推理，所以首次使用，会自动下载Diffusers格式的T5和Clip（10G左右）
