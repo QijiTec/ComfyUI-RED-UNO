@@ -57,27 +57,19 @@ https://huggingface.co/diffusers/FLUX.1-vae/tree/main
 
 ComfyUI UNO Nodes is a collection of nodes for ComfyUI that allows you to load and use UNO models.
 
-https://github.com/bytedance/UNO comfyui
+[https://github.com/bytedance/UNO comfyui](https://github.com/QijiTec/ComfyUI-RED-UNO.git)
 
 
 FP8 support
-open offload and fp8 support 24GB VRAM
+open offload and fp8 support 16GB VRAM
 
 flux model in unet directory and lora in lora directory
 
 clip and t5 will autodownload
 
 
+![UNO0](https://github.com/user-attachments/assets/2d5e287e-73fc-4e95-ba3d-42f81ef920fc)
 
-
-
-## Online Run:
-
-online workflow run: [Flux UNO Mutil image reference](https://www.comfyonline.app/explore/0acb4945-aac0-430c-b693-435ad501585c)
-
-https://www.comfyonline.app comfyonline is comfyui cloud website, Run ComfyUI workflows online and deploy APIs with one click
-
-Provides an online environment for running your ComfyUI workflows, with the ability to generate APIs for easy AI application development.
 
 
 ## Paper Analysis
