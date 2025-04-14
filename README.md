@@ -7,6 +7,9 @@ Default 16GB VRAM UNO in context generation ComfyUI-node, using RED-UNO FT model
 
 https://civitai.com/models/958009/redcraft-or-cads-or-updated-apr14-or-commercial-and-advertising-design-system
 
+![image](https://github.com/user-attachments/assets/d354655e-a446-48f3-893b-edfb5e61d6f7)
+
+
 ## RED. UNO In-Context (FP8) 4/14/2025
 
 REDAIGC FT Model used to match UNO In-Context Generation
@@ -21,7 +24,7 @@ REDAIGC FT Model used to match UNO In-Context Generation
 
 由于ComfyUI-RED-UNO使用Diffusers库进行推理，所以首次使用，会自动下载Diffusers格式的T5和Clip（10G左右）
 
-存放路径是ComfyUI虚拟环境的.chche缓存文件夹，如果是系统级安装的ComfyUI，则会存放至C盘User路径下的.cache（非常占空间）
+存放路径是ComfyUI虚拟环境的.cache缓存文件夹，如果是系统级安装的ComfyUI，则会存放至C盘User路径下的.cache（非常占空间）
 
 建议是给ComfyUI的虚拟环境指定一个独立的缓存目录。
 
