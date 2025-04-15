@@ -61,6 +61,14 @@ ComfyUI UNO Nodes is a collection of nodes for ComfyUI that allows you to load a
 
 [https://github.com/bytedance/UNO comfyui](https://github.com/QijiTec/ComfyUI-RED-UNO.git)
 
+# 使用RED-UNO，因为UNO使用的模型格式和ComfyUI不一样，否则就会报错
+
+Missing keys: 236
+Unexpected keys: 236
+
+这个错误是因为底模不匹配UNO算法，下载使用这个FLUX底模 https://civitai.com/models/958009
+不可以把别的模型改名字替代，因为模型结构不一样！要用Diffusers格式的模型，才可以正确加载。
+
 
 FP8 support
 open offload and fp8 support 16GB VRAM
