@@ -1,0 +1,15 @@
+[project]
+name = "red-uno"
+description = ""
+version = "1.0.0"
+license = {file = "LICENSE"}
+dependencies = ["einops", "transformers", "huggingface-hub", "diffusers"]
+
+[project.urls]
+Repository = "https://github.com/QijiTec/ComfyUI-RED-UNO"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "ComfyUI-RED-UNO"
+Icon = ""
