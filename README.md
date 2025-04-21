@@ -37,7 +37,7 @@ FLUX FT底模正常存放在ComfyUI\models\diffusion_models目录下，VAE在Com
 use_fp8和offload 默认勾选，否则24G显存就不够用了，VAE也要使用Diffusers格式的版本否则会报错（ComfyUI目前没有直接支持UNO所以才这么折腾）
 
 VAE版本：
-https://huggingface.co/diffusers/FLUX.1-vae/tree/main
+https://huggingface.co/GuangyuanSD/16C_vae_Diffusers
 
 
 ---
@@ -52,7 +52,7 @@ https://huggingface.co/bytedance-research/UNO
 
 VAE版本：
 
-https://huggingface.co/diffusers/FLUX.1-vae/tree/main
+https://huggingface.co/GuangyuanSD/16C_vae_Diffusers
 
 
 # ComfyUI UNO Nodes
